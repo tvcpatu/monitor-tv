@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monitor en TV</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0; height: 100%; background-color: black;
+    }
+    iframe {
+      width: 100%; height: 100%; border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="http://179.60.235.162/MEGAFLOTMONGC/mapas.php" id="visor"></iframe>
+  <script>
+    setInterval(() => {
+      window.scrollBy(0, 1);
+      window.scrollBy(0, -1);
+    }, 50000);
+  </script>
+</body>
+</html>
