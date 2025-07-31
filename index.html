@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Monitor en TV</title>
+  <meta charset="UTF-8" />
+  <title>Monitor en TV - Auto Refresh</title>
   <style>
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: black;
+      margin: 0; padding: 0; height: 100%; background-color: black; overflow: hidden;
     }
     iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+      width: 100%; height: 100%; border: none;
     }
   </style>
+  <script>
+    // Recarga la página cada 5 minutos (300,000 ms)
+    setTimeout(() => {
+      location.reload();
+    }, 300000);
+  </script>
 </head>
 <body>
-
-<iframe src="http://179.60.235.162/MEGAFLOTMONGC/mapas.php" id="visor"></iframe>
-
-<script>
-  // Simula actividad para evitar salvapantallas
-  setInterval(() => {
-    window.scrollBy(0, 1);
-    window.scrollBy(0, -1);
-  }, 50000);
-</script>
-
+  <iframe src="http://179.60.235.162/MEGAFLOTMONGC/mapas.php" id="visor"></iframe>
 </body>
 </html>
