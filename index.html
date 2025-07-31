@@ -1,15 +1,26 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Redireccionando al monitor</title>
-  <meta http-equiv="refresh" content="300;url=http://179.60.235.162/MEGAFLOTMONGC/mapas.php" />
-  <script>
-    // Redirige inmediatamente al cargar
-    window.location.href = "http://179.60.235.162/MEGAFLOTMONGC/mapas.php";
-  </script>
+    <meta charset="UTF-8">
+    <title>Monitor TV</title>
+    <meta http-equiv="refresh" content="300">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-  <p>Redireccionando al sitio de monitoreo...</p>
+    <iframe src="http://179.60.235.162/MEGAFLOTMONGC/mapas.php" allowfullscreen></iframe>
 </body>
 </html>
